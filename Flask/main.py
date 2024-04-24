@@ -91,4 +91,4 @@ def prediction():
         return jsonify({'img_data_url': img_data_url, 'no_damage': no_damage, 'minor_damage': minor_damage, 'major_damage': major_damage, 'destroyed': destroyed})
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(port=5001, debug=True)

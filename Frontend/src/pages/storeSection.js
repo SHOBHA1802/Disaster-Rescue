@@ -19,7 +19,7 @@ function Storesmap() {
     let data = new FormData();
     data.append('file', fileblob);
     try {
-      let response = await axios.post('http://127.0.0.1:5000/', data, { headers: { 'Content-Type': 'multipart/form-data' } })
+      let response = await axios.post('http://127.0.0.1:5001/', data, { headers: { 'Content-Type': 'multipart/form-data' } })
       setImageResponse(response.data.img_data_url);
       setNoDamage(response.data.no_damage);
       setMinorDamage(response.data.minor_damage);
