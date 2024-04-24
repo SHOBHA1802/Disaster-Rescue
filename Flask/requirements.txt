@@ -5,3 +5,4 @@ flask-cors==3.1.1
 Keras==2.6.0
 tensorflow==2.7.0
 Pillow==9.0.1
+keras-utils==1.0.13
