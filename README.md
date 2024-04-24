@@ -1,76 +1,55 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+### Frontend Setup
 
-\begin{document}
+To generate the environment needed to run the frontend code, follow these steps:
 
-\section*{Frontend Setup}
-
-In order to generate the environment needed to run the frontend code, we would need to install node modules in the frontend directory itself.
-
-\begin{enumerate}
-    \item Navigate to the frontend folder:
-    \begin{verbatim}
+1. Navigate to the frontend folder:
+    ```bash
     cd Frontend
-    \end{verbatim}
-    
-    \item Run the following command to install required packages:
-    \begin{verbatim}
+    ```
+
+2. Run the following command to install all the required packages:
+    ```bash
     npm install
-    \end{verbatim}
-\end{enumerate}
+    ```
 
-This will install all the packages required to run our React app.
+3. Generate an environment file in the frontend folder and add the following environment variable:
+    ```plaintext
+    REACT_APP_BACKEND=http://localhost:5000/api
+    ```
 
-Generate an environment file in the frontend folder and add this environment variable:
+### Backend (Node.js) Setup
 
-\begin{verbatim}
-REACT_APP_BACKEND=http://localhost:5000/api
-\end{verbatim}
+To generate the environment needed to run the backend code (Node.js), follow these steps:
 
-\section*{Backend (Node) Setup}
-
-In order to generate the environment needed to run the backend code (Node), we would need to install node modules in the backend directory itself.
-
-\begin{enumerate}
-    \item Navigate to the backend folder:
-    \begin{verbatim}
+1. Navigate to the backend folder:
+    ```bash
     cd ../Backend
-    \end{verbatim}
-    
-    \item Run the following command to install required packages:
-    \begin{verbatim}
+    ```
+
+2. Run the following command to install all the required packages:
+    ```bash
     npm install
-    \end{verbatim}
-\end{enumerate}
+    ```
 
-This will install all the packages required to run our Node backend.
+3. Generate an environment file in the backend folder and add the following environment variables:
+    ```plaintext
+    MONGO_URI='your_mongo_uri'
+    PORT=5000
+    JWT_SECRET='your_jwt_secret'
+    ```
 
-Generate an environment file in the backend folder and add these environment variables:
+Replace `'your_mongo_uri'` and `'your_jwt_secret'` with actual values.
 
-\begin{verbatim}
-MONGO_URI='YOUR_MONGO_URI'
-PORT=5000
-JWT_SECRET='YOUR_JWT_SECRET'
-\end{verbatim}
+### Backend (Flask) Setup
 
-Replace `'YOUR_MONGO_URI'` and `'YOUR_JWT_SECRET'` with actual values.
+To generate the environment needed to run the backend code (Flask), follow these steps:
 
-\section*{Backend (Flask) Setup}
-
-In order to generate the environment needed to run the backend code (Flask), we would need to install packages in Python in the Flask directory itself.
-
-\begin{enumerate}
-    \item Navigate to the Flask folder:
-    \begin{verbatim}
+1. Navigate to the Flask folder:
+    ```bash
     cd ../Flask
-    \end{verbatim}
-    
-    \item Run the following command to install required packages:
-    \begin{verbatim}
+    ```
+
+2. Run the following command to install all the required Python packages:
+    ```bash
     pip install -r requirements.txt
-    \end{verbatim}
-\end{enumerate}
-
-This will install all the packages required to run our Flask backend.
-
-\end{document}
+    ```
