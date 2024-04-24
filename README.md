@@ -54,5 +54,5 @@ To generate the environment needed to run the backend code (Flask), follow these
     pip install -r requirements.txt
     ```
 
-Download the weights from https://drive.google.com/file/d/1jv7zF_kje34Ukt3slp0PX_DfYWGKlMDU/view?usp=sharing and the json file of model
-from https://drive.google.com/file/d/1WCkE5IQ9cvlprYbUBVsjEJ_9WDmdaW3t/view?usp=sharing
+Download the weights from https://drive.google.com/file/d/1jv7zF_kje34Ukt3slp0PX_DfYWGKlMDU/view?usp=sharing 
+Download the json file of model from https://drive.google.com/file/d/1WCkE5IQ9cvlprYbUBVsjEJ_9WDmdaW3t/view?usp=sharing
