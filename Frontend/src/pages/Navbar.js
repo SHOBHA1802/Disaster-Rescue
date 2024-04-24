@@ -76,7 +76,7 @@ function Component({ profile, setProfile, ...props }) {
 
           <a href="/">Home</a>
           <a href="/#CARD">services</a>
-          <a href="/about">About Us</a>
+
 
           {email ? (
             <button
